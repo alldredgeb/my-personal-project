@@ -10,6 +10,9 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use( express.static( `${__dirname}/../build` ) );
+
+
 
 massive(process.env.CONNECTION_STRING).then( (db) => {
   app.set('db', db);
@@ -23,6 +26,11 @@ app.get('/api/getClothes/:category', (req, res) => {
 app.get('/api/getClothingDetail/:id', (req, res) => {
   // res.status(200).send(nameOfFile)
   console.log(`we hit getClothingDetail ${req.params.id}`)
+})
+
+const path = require('path')
+app.get('*', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../build/index.html'));
 })
 
 app.listen(port, () => {
