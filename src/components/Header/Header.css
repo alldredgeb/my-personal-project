@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700');
+
+.h_overall {
+  border-top: 5px solid black;
+}
+
+.h_wrapper {
+  /* max-width: 1300px; */
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.search_and_cart_and_login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search_image {
+  width: 25px;
+  height: 25px;
+}
+
+.cart_and_login_container {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+.cart_image {
+  width: 25px;
+  height: 25px;
+}
+
+.login_text {
+  font-size: 13.5px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.logo_container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hamburger {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
