@@ -1,0 +1,41 @@
+.App {
+  border-top: 5px solid black;
+}
+
+.overall_wrapper {
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 1300px;
+}
+
+@media screen and (min-width: 1350px) {
+  .overall_wrapper {
+    margin: auto;
+  }
+}
+
+.productview_wrapper {
+  width: 100%;
+  background: lightgray;
+}
+
+.featured_collection_vid {
+  width: 100%;
+}
+
+@media screen and (min-width: 750px) {
+  .navigation_and_productview {
+    display: flex;
+  }
+  .navigation_wrapper {
+    width: 15%;
+  }
+  .productview_wrapper {
+    width: 85%;
+    background: lightgray;
+  }
+  .featured_collection_vid {
+    width: 85%;
+    float: right;
+  }
+}

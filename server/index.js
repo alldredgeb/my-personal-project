@@ -8,6 +8,11 @@ const port = 3001;
 const app = express();
 
 
+app.use((req, res, next)=>{
+	console.log(req.url);
+	next();
+})
+
 app.use(bodyParser.json());
 app.use(cors());
 app.use( express.static( `${__dirname}/../build` ) );

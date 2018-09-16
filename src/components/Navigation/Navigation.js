@@ -19,6 +19,7 @@ class Navigation extends Component {
   render() {
     return (
       <section className="nav_overall">
+      
         <div className="hamburger_wrapper">
           <div className="hamburger_container" onClick={this.expandMenu}>
             <div className="hamburger"></div>
@@ -38,13 +39,22 @@ class Navigation extends Component {
             <li>Shirts</li>
             <li>T-Shirts</li>
             <li>Shorts</li>
-        </ul>
+          </ul>
           : 
           null
         }
         
-          <div>
-        </div>
+        <ul className="links_container_2">
+          <li className="li2">Home</li>
+          <li className="li2">Accessories</li>
+          <li className="li2">Footwear</li>
+          <li className="li2">Jeans</li>
+          <li className="li2">Outerwear</li>
+          <li className="li2">Pants</li>
+          <li className="li2">Shirts</li>
+          <li className="li2">T-Shirts</li>
+          <li className="li2">Shorts</li>
+        </ul>
       </section>
     )
   }
